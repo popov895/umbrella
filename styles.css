@@ -1,0 +1,138 @@
+::selection {
+    background: #D32F2F;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: #D32F2F;
+    color: #FFFFFF;
+}
+
+a {
+    border-bottom: 1px solid #D32F2F;
+    color: #D32F2F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body {
+    background: fixed url(background.jpg);
+    color: #212121;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    width: 100%;
+}
+
+hr {
+    background-color: #D32F2F;
+    border: none;
+    color: #D32F2F;
+    height: 1px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+p:first-child {
+    margin-top: 0px;
+}
+
+#hero {
+    background: url(hero-background.jpg) fixed;
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.75);
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#hero > div {
+    background: url(hero.png) 50% 50% no-repeat fixed;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+    background: linear-gradient(to bottom, #DC5959, #D32F2F);
+    border: 1px solid #D32F2F;
+    border-radius: 5px;
+    box-shadow: 0px 6px 0px #A30303, 0px 3px 15px rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding: 7px 20px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button:last-child {
+    margin-top: 10px;
+}
+
+.collapsible {
+    border-bottom: 1px dashed;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.collapsible + div {
+    display: none;
+}
+
+.content {
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+}
+
+.highlight {
+    color: #D32F2F;
+    font-weight: bold;
+}
+
+.panel {
+    overflow: hidden;
+    text-align: center;
+}
+
+.panel > div {
+    display: inline-block;
+}
+
+.panel > div:first-child {
+    text-align: right;
+}
+
+@media only screen and (orientation: portrait) {
+    #hero > div {
+        background: url(hero-portrait.png) 50% 50% no-repeat fixed;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 480px) and (min-height: 480px) {
+    body {
+        font-size: 20px;
+    }
+
+    #hero {
+        box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.75);
+        margin-bottom: 40px;
+    }
+
+    .button {
+        padding: 10px 30px;
+    }
+
+    .content {
+        padding: 0px 40px 40px 40px;
+    }
+}
