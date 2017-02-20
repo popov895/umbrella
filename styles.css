@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+article {
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+}
+
 body {
     background: fixed url(background.jpg);
     color: #212121;
@@ -25,11 +30,27 @@ body {
     width: 100%;
 }
 
-hr {
-    background-color: #D32F2F;
-    border: none;
-    color: #D32F2F;
-    height: 1px;
+footer {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header {
+    background: url(hero-background.jpg) fixed;
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.75);
+    display: block;
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header > div {
+    background: url(hero.png) 50% 50% no-repeat fixed;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
 }
 
 html {
@@ -41,19 +62,14 @@ p:first-child {
     margin-top: 0px;
 }
 
-#hero {
-    background: url(hero-background.jpg) fixed;
-    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.75);
-    height: 100%;
-    margin-bottom: 20px;
+section {
+    display: inline-block;
+    text-align: center;
     width: 100%;
 }
 
-#hero > div {
-    background: url(hero.png) 50% 50% no-repeat fixed;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
+section > div:last-child {
+    margin-top: 10px;
 }
 
 .button {
@@ -66,16 +82,14 @@ p:first-child {
     font-weight: bold;
     margin-bottom: 6px;
     padding: 7px 20px;
+    text-align: center;
     text-decoration: none;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    width: 200px;
 }
 
 .button:hover {
     opacity: 0.9;
-}
-
-.button:last-child {
-    margin-top: 10px;
 }
 
 .collapsible {
@@ -88,51 +102,47 @@ p:first-child {
     display: none;
 }
 
-.content {
-    padding: 0px 20px 20px 20px;
-    text-align: justify;
-}
-
 .highlight {
     color: #D32F2F;
     font-weight: bold;
 }
 
-.panel {
-    overflow: hidden;
-    text-align: center;
-}
-
-.panel > div {
-    display: inline-block;
-}
-
-.panel > div:first-child {
-    text-align: right;
-}
-
 @media only screen and (orientation: portrait) {
-    #hero > div {
+    header > div {
         background: url(hero-portrait.png) 50% 50% no-repeat fixed;
         background-size: contain;
     }
 }
 
 @media only screen and (min-width: 480px) and (min-height: 480px) {
+    article {
+        padding: 0px 40px 40px 40px;
+    }
+
     body {
         font-size: 20px;
     }
 
-    #hero {
+    header {
         box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.75);
         margin-bottom: 40px;
     }
 
-    .button {
-        padding: 10px 30px;
+    section > div {
+        box-sizing: border-box;
+        float: left;
+        padding: 0px 5px;
+        text-align: right;
+        width: 50%;
     }
 
-    .content {
-        padding: 0px 40px 40px 40px;
+    section > div:last-child {
+        float: right;
+        margin-top: 0px;
+        text-align: left;
+    }
+
+    .button {
+        padding: 10px 30px;
     }
 }
