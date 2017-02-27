@@ -21,7 +21,7 @@ article {
 }
 
 body {
-    background: fixed url(background.jpg);
+    background: url(background.jpg);
     color: #212121;
     height: 100%;
     font-family: "Open Sans", sans-serif;
