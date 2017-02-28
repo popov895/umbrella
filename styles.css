@@ -15,11 +15,6 @@ a {
     text-decoration: none;
 }
 
-article {
-    padding: 0px 20px 20px 20px;
-    text-align: justify;
-}
-
 body {
     background: url(background.jpg);
     color: #212121;
@@ -58,6 +53,11 @@ html {
     width: 100%;
 }
 
+main {
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+}
+
 p:first-child {
     margin-top: 0px;
 }
@@ -88,19 +88,32 @@ section {
     opacity: 0.9;
 }
 
-.collapsible {
+.highlight {
+    color: #D32F2F;
+    font-weight: bold;
+}
+
+#faq {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#faq span {
     border-bottom: 1px dashed;
     cursor: pointer;
     font-weight: bold;
 }
 
-.collapsible + div {
+#faq span + p {
     display: none;
+    margin: 5px 0px;
 }
 
-.highlight {
-    color: #D32F2F;
-    font-weight: bold;
+#warning {
+    background: #D32F2F;
+    color: #FFF;
+    display: none;
+    padding: 10px;
 }
 
 @media only screen and (orientation: portrait) {
@@ -111,10 +124,6 @@ section {
 }
 
 @media only screen and (min-width: 480px) and (min-height: 480px) {
-    article {
-        padding: 0px 40px 40px 40px;
-    }
-
     body {
         font-size: 20px;
     }
@@ -124,7 +133,15 @@ section {
         margin-bottom: 40px;
     }
 
+    main {
+        padding: 0px 40px 40px 40px;
+    }
+
     .button {
         padding: 10px 30px;
+    }
+
+    #warning {
+        padding: 20px;
     }
 }
