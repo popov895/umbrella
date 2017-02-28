@@ -6,7 +6,7 @@
         <meta name="google-site-verification" content="p6FYbMc9ccLckYRqK7ts3ns-JUqZJT9TC3fq0QMugl8">
         <title>Umbrella Weather App for BlackBerry 10</title>
         <meta name="description" content="Umbrella Weather App for BlackBerry 10">
-        <meta name="keywords" content="Umbrella,weather,BlackBerry,BB,Weather Underground,wunderground,forecast,meteo,PWS">
+        <meta name="keywords" content="Umbrella,weather,BlackBerry,BB,application,Weather Underground,wunderground,forecast,meteo,PWS">
         <script src="scripts.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
@@ -16,7 +16,11 @@
         <header>
             <div></div>
         </header>
-        <article>
+        <main>
+            <!-- Warning -->
+            <div id="warning">
+                Starting from 1 August 2016, Umbrella and Umbrella Free are now no longer available for installation. Please accept my apologies.
+            </div>
             <!-- Description -->
             <p>
                 <span class="highlight">Umbrella</span> provides a weather information from the <a href="http://www.wunderground.com" target="_blank" title="Open Weather Underground website">Weather Underground service</a>, which as a data source uses official meteorological broadcast services, raw data from airports weather stations, raw data from radars, and raw data from official weather stations. It also uses observations from members with automated personal weather stations. With this application you can view current weather data for any city as well as daily forecast (for 10 day) and hourly forecast (for 36 hours).
@@ -69,29 +73,26 @@
                 <a class="button" href="https://appworld.blackberry.com/webstore/content/59956073" target="_blank" title="Download Umbrella Free / $0">Umbrella Free / $0</a>
             </section>
             <!-- FAQ -->
-            <p>
-                FAQ:
-            </p>
-            <ul>
+            <ul id="faq">
                 <li> <!-- Api Key -->
-                    <label class="collapsible">What is Api Key?</label>
-                    <div>An <a href="https://en.wikipedia.org/wiki/Application_programming_interface_key" target="_blank" title="View Api Key on Wikipedia">Api Key</a> is a code passed in by application calling an Weather Underground API to identify the calling application to the Weather Underground Web site.</div>
+                    <span>What is Api Key?</span>
+                    <p>An <a href="https://en.wikipedia.org/wiki/Application_programming_interface_key" target="_blank" title="View Api Key on Wikipedia">Api Key</a> is a code passed in by application calling an Weather Underground API to identify the calling application to the Weather Underground Web site.</p>
                 </li>
                 <li> <!-- UV -->
-                    <label class="collapsible">What is UV?</label>
-                    <div>The <a href="https://en.wikipedia.org/wiki/Ultraviolet_index" target="_blank" title="View UV on Wikipedia">UV</a> is an international standard measurement of the strength of sunburn-producing ultraviolet radiation at a particular place and time.</div>
+                    <span>What is UV?</span>
+                    <p>The <a href="https://en.wikipedia.org/wiki/Ultraviolet_index" target="_blank" title="View UV on Wikipedia">UV</a> is an international standard measurement of the strength of sunburn-producing ultraviolet radiation at a particular place and time.</p>
                 </li>
                 <li> <!-- Feels Like -->
-                    <label class="collapsible">What is Feels Like?</label>
-                    <div>The <a href="https://en.wikipedia.org/wiki/Apparent_temperature" target="_blank" title="View Feels Like on Wikipedia">Feels Like</a> is the general term for the perceived outdoor temperature, caused by the combined effects of air temperature, relative humidity and wind speed.</div>
+                    <span>What is Feels Like?</span>
+                    <p>The <a href="https://en.wikipedia.org/wiki/Apparent_temperature" target="_blank" title="View Feels Like on Wikipedia">Feels Like</a> is the general term for the perceived outdoor temperature, caused by the combined effects of air temperature, relative humidity and wind speed.</p>
                 </li>
                 <li> <!-- Actual Pressure -->
-                    <label class="collapsible">What is Actual Pressure?</label>
-                    <div>The <span class="highlight">Actual Pressure</span> is the atmospheric pressure at a given elevation on land. If <span class="highlight">Show actual pressure</span> option is disabled, the application shows <a href="https://en.wikipedia.org/wiki/Atmospheric_pressure#Mean_sea_level_pressure" target="_blank" title="View MSLP on Wikipedia">mean sea level pressure</a>.</div>
+                    <span>What is Actual Pressure?</span>
+                    <p>The <span class="highlight">Actual Pressure</span> is the atmospheric pressure at a given elevation on land. If <span class="highlight">Show actual pressure</span> option is disabled, the application shows <a href="https://en.wikipedia.org/wiki/Atmospheric_pressure#Mean_sea_level_pressure" target="_blank" title="View MSLP on Wikipedia">mean sea level pressure</a>.</p>
                 </li> <!-- Weather map -->
                 <li>
-                    <label class="collapsible">What is Weather Map?</label>
-                    <div>The <a href="https://en.wikipedia.org/wiki/Weather_map" target="_blank" title="View Weather Map on Wikipedia">Weather Map</a> displays various meteorological features across a particular area at a particular point in time and has various symbols which all have specific meanings.</div>
+                    <span>What is Weather Map?</span>
+                    <p>The <a href="https://en.wikipedia.org/wiki/Weather_map" target="_blank" title="View Weather Map on Wikipedia">Weather Map</a> displays various meteorological features across a particular area at a particular point in time and has various symbols which all have specific meanings.</p>
                 </li>
             </ul>
             <!-- Forum & Feedback -->
@@ -99,7 +100,7 @@
                 <a class="button" href="http://forums.crackberry.com/app-announcements-f281/umbrella-weather-app-1011426" target="_blank" title="Open Umbrella Forum">Visit Forum</a>
                 <a class="button" href="mailto:popov895@ukr.net" title="Send Feedback to Developer">Send Feedback</a>
             </section>
-        </article>
+        </main>
         <footer>
             Eugene Popov © 2017
         </footer>
