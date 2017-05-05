@@ -106,6 +106,13 @@
                             url: "http://{a-c}.maps.owm.io:8099/5735d67f5836286b0076267b/{z}/{x}/{y}?hash=e529bed414220dfa2559b17e3f5ca831"
                         })
                     }),
+                    // clouds
+                    new ol.layer.Tile({
+                        visible: false,
+                        source: new ol.source.XYZ({
+                            url: "http://{a-c}.maps.owm.io:8099/58cfbaee73e9ac0001bbf915/{z}/{x}/{y}?hash=08fc4c0a99d6ebbf97a91c9fbdc242c1"
+                        })
+                    }),
                     // labels
                     new ol.layer.Tile({
                         source: new ol.source.XYZ({
@@ -129,7 +136,8 @@
                     Precipitation: 1,
                     Pressure: 2,
                     Temperature: 3,
-                    Wind: 4
+                    Wind: 4,
+                    Clouds: 5
                 };
                 map.addMarker = function (latitude, longitude) {
                     var div = document.createElement("div");
@@ -145,7 +153,7 @@
                     mapView.setCenter(ol.proj.fromLonLat([longitude, latitude]));
                 };
                 map.switchLayer = function (layer) {
-                    for (var i = this.Layer.Precipitation; i <= this.Layer.Wind; ++i) {
+                    for (var i = this.Layer.Precipitation; i <= this.Layer.Clouds; ++i) {
                         mapLayers[i].setVisible(layer === i);
                     }
                 };
